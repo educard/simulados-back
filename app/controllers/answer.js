@@ -32,7 +32,7 @@ const correctAnswer = async (body) => {
  * This function can only be called from within the "create" function.
  */
 const update = async (body, res, correctAns, alternative) => { 
-    if (body.time_to_answer == undefined || !body.time_to_answer.toString()) {
+    if (body.time_to_answer === undefined || !body.time_to_answer.toString()) {
         return res.status(400).json({ success: false, error: 'time_to_answer = Este campo é necessário para atualizar uma resposta!' });
     } else {
         const updateStatus = await AnswerModel.update(

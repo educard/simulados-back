@@ -5,7 +5,7 @@ var ExamQuestion = require('../models/practiseexam_questions')(db.sequelize, db.
 var Practise_exam = require('../models/practise_exam')(db.sequelize, db.Sequelize)
 var participationController = require('./participation')
 
-exports.findAll = async (req, res) => {
+exports.findAll = async (res) => {
     try {
         Practise_exam.all().then((exams) => {
             res.status(200).json({

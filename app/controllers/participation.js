@@ -2,8 +2,7 @@ var exports = module.exports = {}
 var db = require('../config/datasource.js');
 var StudentModel = require('../models/student.js')(db.sequelize, db.Sequelize);
 var ParticipationModel = require('../models/participation.js')(db.sequelize, db.Sequelize);
-var Practiseexam_questionsModel = require('../models/practiseexam_questions')(db.sequelize, db.Sequelize)
-var Practise_examModel = require('../models/practise_exam')(db.sequelize, db.Sequelize)
+var Practiseexam_questionsModel = require('../models/practiseexam_questions')(db.sequelize, db.Sequelize);
 
 /**
  * Get the number of questions of an exam

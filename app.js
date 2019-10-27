@@ -1,7 +1,5 @@
 const express = require('express')
 const app = module.exports = express();
-const passport = require('passport')
-const session = require('express-session')
 const bodyParser = require('body-parser')
 var cors = require('cors')
 
@@ -12,12 +10,9 @@ app.use(cors({origin: '*'}));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-app.get('/', function (req, res) {
+app.get('/', function (res) {
     res.send('Welcome stranger');
 });
-
-//Models
-const models = require("./app/config/datasource");
 
 //Routes
 require('./app/routes/auth.js')(app)
