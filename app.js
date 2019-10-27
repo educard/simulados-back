@@ -10,7 +10,7 @@ app.use(cors({origin: '*'}));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-app.get('/', function (res) {
+app.get('/', function (req, res) {
     res.send('Welcome stranger');
 });
 
