@@ -13,7 +13,7 @@ const populate = {
     run: function () {
         Object.keys(json).map((table)=>{
             let model = sequelize.import(path.join(dir, table))
-            model.bulkCreate(json[table])
+            return model.bulkCreate(json[table])
         })
     }
 }
