@@ -1,27 +1,27 @@
 {
     "development": {
         "username": "root",
-        "password": "root",
+        "password": "senha",
         "database": "simulados_database",
-        "host": "127.0.0.1",
+        "host": "172.18.0.2",
         "dialect": "mysql"
     },
     "test": {
-        "username": "",
-        "password": null,
-        "database": "",
-        "host": "",
+        "username": "root",
+        "password": "senha",
+        "database": "simulados_database",
+        "host": "172.18.0.2",
         "dialect": "mysql"
     },
     "production": {
-        "username": "",
-        "password": null,
-        "database": "",
-        "host": "127.0.0.1",
+        "username": "root",
+        "password": "senha",
+        "database": "simulados_database",
+        "host": "172.18.0.2",
         "dialect": "mysql"
     },
     "auth":{
-      "secret":"simulados",
+      "secret":"senha",
       "expiration_time":100000
     }
 }
