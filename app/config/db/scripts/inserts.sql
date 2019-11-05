@@ -1,8 +1,8 @@
 insert into users (name, username, about, email, password, last_login, status)
-values ('Admin', 'admin', 'about me', 'admin@simulados.com', '$2a$08$FZNXJAmVUPTPLBWdnMuequ.dppzWtlocW9wyA3zMTBTpka2eQehnq', null, 'active');
+values ('Admin', 'admin', 'about me', 'admin@simulados.com', '$2a$08$oo2LVead16awYoM1CfZFfONotziCmsHs2/MItwJnH/X6lfUBvfujK', null, 'active');
 
 insert into administrators (name, email, password, user_id)
-values ('Administrators', 'administrators@simulados.com', '$2a$08$FZNXJAmVUPTPLBWdnMuequ.dppzWtlocW9wyA3zMTBTpka2eQehnq', 1);
+values ('Administrators', 'administrators@simulados.com', '$2a$08$oo2LVead16awYoM1CfZFfONotziCmsHs2/MItwJnH/X6lfUBvfujK', 1);
 
 insert into areas (name)
 values ('Não Cadastrado');
@@ -35,7 +35,7 @@ insert into subareas (name, area_id)
 values ('Responsabilidade Civil', 2);
 
 insert into professors (email, name, password, active, user_id)
-values ('admin@simulados.com', 'professor', '$2a$08$FZNXJAmVUPTPLBWdnMuequ.dppzWtlocW9wyA3zMTBTpka2eQehnq', true, 1);
+values ('admin@simulados.com', 'professor', '$2a$08$oo2LVead16awYoM1CfZFfONotziCmsHs2/MItwJnH/X6lfUBvfujK', true, 1);
 
 
 insert into professor_subareas (professor_id, subarea_id)
@@ -43,7 +43,7 @@ values (1, 1);
 
 
 insert into coordinators(area_id, email, name, password, active, user_id)
-values (1, 'admin@simulados.com', 'professor', '$2a$08$FZNXJAmVUPTPLBWdnMuequ.dppzWtlocW9wyA3zMTBTpka2eQehnq', true, 1);
+values (1, 'admin@simulados.com', 'professor', '$2a$08$oo2LVead16awYoM1CfZFfONotziCmsHs2/MItwJnH/X6lfUBvfujK', true, 1);
 
 insert into profiles (type)
 values ('Profile 1');
@@ -55,7 +55,7 @@ insert into profiles (type)
 values ('PUC');
 
 insert into students(profile_id, email, name, password, active, user_id)
-values (1, 'admin@simulados.com', 'professor', '$2a$08$FZNXJAmVUPTPLBWdnMuequ.dppzWtlocW9wyA3zMTBTpka2eQehnq', true, 1);
+values (1, 'admin@simulados.com', 'professor', '$2a$08$oo2LVead16awYoM1CfZFfONotziCmsHs2/MItwJnH/X6lfUBvfujK', true, 1);
 
 insert into practise_exams (id, is_aob_exam, aob_exam_year, aob_exam_serial) 
 values (1, true, 2016, 20);

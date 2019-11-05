@@ -1,4 +1,3 @@
---Drop all tables of Simulados Project, considering relation order
 drop table Answers;
 drop table Participations;
 drop table Alternatives;
